@@ -1,0 +1,66 @@
+{
+  "intents": [
+    {
+      "tag": "Greeting",
+      "patterns": [
+        "Hello",
+        "Hi there",
+        "Good morning"
+      ],
+      "responses": [
+        "Hello! How can I assist you today?",
+        "Hi there! How can I help you?",
+        "Good morning! What can I do for you?"
+      ],
+      "context_set": " "  
+    },
+    {
+      "tag": "plot_chart",
+      "patterns": [
+        "I want you to plot a stock price!",
+        "Please plot a chart!",
+        "Good morning"
+      ],
+      "responses": [
+        "Plotting Chart"
+      ],
+      "context_set": " "  
+    },
+    {
+      "tag": "add_stocks",
+      "patterns": ["add to portfolio", "add stock to portfolio", "buy stock"],
+      "responses": ["Stock added to portfolio."],
+      "context_set": ""
+    },
+    {
+      "tag": "remove_stocks",
+      "patterns": ["remove from portfolio", "sell stock", "remove stock from portfolio"],
+      "responses": ["Stock removed from portfolio."],
+      "context_set": ""
+    },
+    {
+      "tag": "show_stocks",
+      "patterns": ["show portfolio", "display portfolio", "view portfolio"],
+      "responses": ["Here is your portfolio."],
+      "context_set": ""
+    },
+    {
+      "tag": "stock_price",
+      "patterns": ["stock price", "price of stock", "what is the stock price"],
+      "responses": ["The current price of the stock is $X."],
+      "context_set": ""
+    },
+    {
+      "tag": "stocks_worth",
+      "patterns": ["worth of stocks", "value of stocks", "total worth of portfolio"],
+      "responses": ["The total worth of your portfolio is $X."],
+      "context_set": ""
+    },
+    {
+      "tag": "stocks_gains",
+      "patterns": ["stock gains", "portfolio gains", "total gains"],
+      "responses": ["Your portfolio has gained $X."],
+      "context_set": ""
+    }
+  ]
+}
